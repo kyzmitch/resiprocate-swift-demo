@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6048821621368A98002F9F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6048821521368A98002F9F39 /* AppDelegate.swift */; };
+		6048821821368A98002F9F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6048821721368A98002F9F39 /* ViewController.swift */; };
+		6048821B21368A98002F9F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6048821921368A98002F9F39 /* Main.storyboard */; };
+		6048821D21368A9A002F9F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6048821C21368A9A002F9F39 /* Assets.xcassets */; };
+		6048822021368A9A002F9F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6048821E21368A9A002F9F39 /* LaunchScreen.storyboard */; };
+		6048822921368AB4002F9F39 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6048822821368AB4002F9F39 /* CallKit.framework */; };
+		6048823721368AC6002F9F39 /* libresiprocate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6048823421368ABF002F9F39 /* libresiprocate.a */; };
+		6048823821368AC9002F9F39 /* libares.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6048823221368ABF002F9F39 /* libares.a */; };
+		6048823D21368B0A002F9F39 /* HSipStack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6048823C21368B0A002F9F39 /* HSipStack.mm */; };
+		6048827A21369936002F9F39 /* HDialogUsageManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6048827921369936002F9F39 /* HDialogUsageManager.mm */; };
+		604882882137F8C5002F9F39 /* HUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 604882872137F8C5002F9F39 /* HUtils.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6048823121368ABF002F9F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6048822A21368ABE002F9F39 /* sip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC06F0554671400DB518D;
+			remoteInfo = ares;
+		};
+		6048823321368ABF002F9F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6048822A21368ABE002F9F39 /* sip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 12F79738086CBA1E00AF4EDF;
+			remoteInfo = resiprocate;
+		};
+		6048823521368ABF002F9F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6048822A21368ABE002F9F39 /* sip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8DB1C870C56B7D800853E27;
+			remoteInfo = SipDialer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6048821221368A98002F9F39 /* VoipDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoipDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6048821521368A98002F9F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6048821721368A98002F9F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6048821A21368A98002F9F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6048821C21368A9A002F9F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6048821F21368A9A002F9F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6048822121368A9A002F9F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6048822821368AB4002F9F39 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		6048822A21368ABE002F9F39 /* sip.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sip.xcodeproj; path = ../resiprocate/resip/sip.xcodeproj; sourceTree = "<group>"; };
+		6048823B21368B0A002F9F39 /* HSipStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HSipStack.h; path = ObjcResiprocate/HSipStack.h; sourceTree = "<group>"; };
+		6048823C21368B0A002F9F39 /* HSipStack.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = HSipStack.mm; path = ObjcResiprocate/HSipStack.mm; sourceTree = "<group>"; };
+		6048823F21368CAE002F9F39 /* VoipDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VoipDemo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		6048827821369936002F9F39 /* HDialogUsageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HDialogUsageManager.h; path = ObjcResiprocate/HDialogUsageManager.h; sourceTree = "<group>"; };
+		6048827921369936002F9F39 /* HDialogUsageManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = HDialogUsageManager.mm; path = ObjcResiprocate/HDialogUsageManager.mm; sourceTree = "<group>"; };
+		6048827F2137CB77002F9F39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		604882842137E72E002F9F39 /* ISipStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ISipStack.h; path = ObjcResiprocate/ISipStack.h; sourceTree = "<group>"; };
+		604882862137F8C5002F9F39 /* HUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HUtils.h; path = ObjcResiprocate/HUtils.h; sourceTree = "<group>"; };
+		604882872137F8C5002F9F39 /* HUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = HUtils.mm; path = ObjcResiprocate/HUtils.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6048820F21368A98002F9F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6048823821368AC9002F9F39 /* libares.a in Frameworks */,
+				6048823721368AC6002F9F39 /* libresiprocate.a in Frameworks */,
+				6048822921368AB4002F9F39 /* CallKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6048820921368A97002F9F39 = {
+			isa = PBXGroup;
+			children = (
+				6048827F2137CB77002F9F39 /* README.md */,
+				6048821421368A98002F9F39 /* VoipDemo */,
+				6048821321368A98002F9F39 /* Products */,
+				6048822721368AB4002F9F39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6048821321368A98002F9F39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6048821221368A98002F9F39 /* VoipDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6048821421368A98002F9F39 /* VoipDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6048823F21368CAE002F9F39 /* VoipDemo-Bridging-Header.h */,
+				6048821521368A98002F9F39 /* AppDelegate.swift */,
+				6048821721368A98002F9F39 /* ViewController.swift */,
+				6048821921368A98002F9F39 /* Main.storyboard */,
+				6048821C21368A9A002F9F39 /* Assets.xcassets */,
+				6048821E21368A9A002F9F39 /* LaunchScreen.storyboard */,
+				6048822121368A9A002F9F39 /* Info.plist */,
+			);
+			path = VoipDemo;
+			sourceTree = "<group>";
+		};
+		6048822721368AB4002F9F39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6048823921368ADC002F9F39 /* ObjcResiprocate */,
+				6048822A21368ABE002F9F39 /* sip.xcodeproj */,
+				6048822821368AB4002F9F39 /* CallKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6048822B21368ABE002F9F39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6048823221368ABF002F9F39 /* libares.a */,
+				6048823421368ABF002F9F39 /* libresiprocate.a */,
+				6048823621368ABF002F9F39 /* SipDialer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6048823921368ADC002F9F39 /* ObjcResiprocate */ = {
+			isa = PBXGroup;
+			children = (
+				6048823B21368B0A002F9F39 /* HSipStack.h */,
+				6048823C21368B0A002F9F39 /* HSipStack.mm */,
+				6048827821369936002F9F39 /* HDialogUsageManager.h */,
+				6048827921369936002F9F39 /* HDialogUsageManager.mm */,
+				604882842137E72E002F9F39 /* ISipStack.h */,
+				604882862137F8C5002F9F39 /* HUtils.h */,
+				604882872137F8C5002F9F39 /* HUtils.mm */,
+			);
+			name = ObjcResiprocate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6048821121368A98002F9F39 /* VoipDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6048822421368A9A002F9F39 /* Build configuration list for PBXNativeTarget "VoipDemo" */;
+			buildPhases = (
+				6048820E21368A98002F9F39 /* Sources */,
+				6048820F21368A98002F9F39 /* Frameworks */,
+				6048821021368A98002F9F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoipDemo;
+			productName = VoipDemo;
+			productReference = 6048821221368A98002F9F39 /* VoipDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6048820A21368A97002F9F39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Harman;
+				TargetAttributes = {
+					6048821121368A98002F9F39 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 6048820D21368A97002F9F39 /* Build configuration list for PBXProject "VoipDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6048820921368A97002F9F39;
+			productRefGroup = 6048821321368A98002F9F39 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6048822B21368ABE002F9F39 /* Products */;
+					ProjectRef = 6048822A21368ABE002F9F39 /* sip.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6048821121368A98002F9F39 /* VoipDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6048823221368ABF002F9F39 /* libares.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libares.a;
+			remoteRef = 6048823121368ABF002F9F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6048823421368ABF002F9F39 /* libresiprocate.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libresiprocate.a;
+			remoteRef = 6048823321368ABF002F9F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6048823621368ABF002F9F39 /* SipDialer */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = SipDialer;
+			remoteRef = 6048823521368ABF002F9F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6048821021368A98002F9F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6048822021368A9A002F9F39 /* LaunchScreen.storyboard in Resources */,
+				6048821D21368A9A002F9F39 /* Assets.xcassets in Resources */,
+				6048821B21368A98002F9F39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6048820E21368A98002F9F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6048827A21369936002F9F39 /* HDialogUsageManager.mm in Sources */,
+				6048821821368A98002F9F39 /* ViewController.swift in Sources */,
+				6048821621368A98002F9F39 /* AppDelegate.swift in Sources */,
+				6048823D21368B0A002F9F39 /* HSipStack.mm in Sources */,
+				604882882137F8C5002F9F39 /* HUtils.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6048821921368A98002F9F39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6048821A21368A98002F9F39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6048821E21368A9A002F9F39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6048821F21368A9A002F9F39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6048822221368A9A002F9F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6048822321368A9A002F9F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6048822521368A9A002F9F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = VoipDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kyzmitch.VoipDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoipDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../resiprocate;
+			};
+			name = Debug;
+		};
+		6048822621368A9A002F9F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = VoipDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kyzmitch.VoipDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoipDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../resiprocate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6048820D21368A97002F9F39 /* Build configuration list for PBXProject "VoipDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6048822221368A9A002F9F39 /* Debug */,
+				6048822321368A9A002F9F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6048822421368A9A002F9F39 /* Build configuration list for PBXNativeTarget "VoipDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6048822521368A9A002F9F39 /* Debug */,
+				6048822621368A9A002F9F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6048820A21368A97002F9F39 /* Project object */;
+}
